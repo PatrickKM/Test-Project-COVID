@@ -28,9 +28,10 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <h1 className={styles.h1}>COVID-19 Real Time Data</h1>
-        <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} /> 
+        <Cards data={data} />
+        <a className={styles.a} href="https://github.com/PatrickKM/test-project-covid">GitHub Repository for this App</a>
       </div>
     );
   }
