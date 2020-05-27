@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Line, Bar } from 'react-chartjs-2';
 
+// Line, Bar are Chart.js elements. They are used in the making of making line & bar charts - like you would in Excel.
+
 import { fetchDailyData } from '../../api';
 
 import styles from './Chart.module.css';

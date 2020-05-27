@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NativeSelect, FormControl } from '@material-ui/core';
 
+// NativeSelect, FormControl are elements from Material UI - they are used as the option select.
+
 import { fetchCountries } from '../../api';
 
 import styles from './CountryPicker.module.css';

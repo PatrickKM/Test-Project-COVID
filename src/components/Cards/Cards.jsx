@@ -3,8 +3,14 @@ import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
 import cx from 'classnames';
 
+// Card, CardContent, Typography, Grid are Material UI elements - they are components similar to Bootstrap. It's boiler templates for UI elements.
+// CountUp is a React Library that counts up from specified numbers, making it look more dynamic instead of static.
+// Classnames is a utility for conditionally joining classNames together.
+
 import styles from './Cards.module.css';
 
+
+// Small if statement - if API Data hasn't arrived, return "Loading..."
 const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
     return 'Loading...';
